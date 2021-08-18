@@ -1,4 +1,4 @@
-# Anomaly-Detection-Server
+# Anomaly-Detection-Web-App
 
 
 ## Project Description
