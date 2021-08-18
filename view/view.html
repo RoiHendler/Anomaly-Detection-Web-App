@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Programming</title>
+</head>
+<body>
+    <h1>Anomaly Detection Server</h1>
+    <form action="/uploadAndPrint" method ="POST" enctype="multipart/form-data" target="result" >
+        <label for="models">Choose a Model:</label>
+        <select id="models" name="models">
+        <option value="linear">Linear</option>
+        <option value="hybrid">Hybrid</option>
+        </select>
+        <table>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>Train CSV:</td>
+                <td><input type="file" id="TrainFile" name="TrainFile"></td>
+            </tr>
+
+            <tr></tr>
+
+            <tr>
+                <td>Test CSV:</td>
+                <td><input type="file" id="TestFile" name="TestFile"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit"></td>
+            </tr>            
+        </table>
+    </form>
+    <br>
+    <iframe name="result" width=80% height=1000%>anomaly report:
+        <div id="anomalyDetails"></div>
+    </iframe>
+
+
+</body>
+</html>
